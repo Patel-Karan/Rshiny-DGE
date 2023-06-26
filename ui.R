@@ -2,6 +2,7 @@ library(shiny)
 library(DT)
 library(shinythemes)
 library(shinycssloaders)
+library(plotly)
 
 # Define UI for application that draws a histogram
 fluidPage(theme = shinytheme("united"),
