@@ -1,0 +1,10 @@
+.shiny-output-error-validation {
+        color: green;
+        font-weight: bold;
+        font-size: 120%;
+}
+
+.navbar-default{
+  background-color: #192841;
+  border-color: #192841;
+}
