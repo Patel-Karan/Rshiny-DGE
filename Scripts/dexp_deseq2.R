@@ -14,7 +14,7 @@ d_exp <- function(dframe, nC, nT){
   colnames(countData) <- paste(colnames(countData),"Raw.Read.Count", sep = "_")
   Normalized_count=(counts(dds, normalized=TRUE))
   colnames(Normalized_count) <- paste(colnames(Normalized_count),"Normalized.Read.Count", sep = "_")
-  res <- data.frame(countData,Normalized_count,result)
+  res <- data.frame(countData,Normalized_count,result, check.names = FALSE)
   Final <- res[ order(res$log2FoldChange ), ]
   return(Final)
 }
